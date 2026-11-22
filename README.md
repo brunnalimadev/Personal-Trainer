@@ -22,3 +22,16 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+## Configuração do site
+
+Todos os dados editáveis ficam em `src/config/site.ts`:
+
+- **`site.whatsapp`** — número só com dígitos, com DDI e DDD (ex.: `5511999999999`). Vazio: o formulário apenas monta o pedido e oferece "Copiar pedido"; nada é enviado.
+- **`pacotes[].preco`** — `null` exibe "Sob consulta". Ex.: `"R$ 300/mês"`.
+- **`site.formacao`**, **`objetivos`** — textos da apresentação e opções do formulário.
+- **Fotos** — as imagens em `src/assets/treino-*.jpg` são ilustrativas e não retratam a Bruna. Substitua os arquivos (mesmo nome) ou altere `fotos` no config.
+
+O formulário de aula experimental nunca confirma reserva: com WhatsApp configurado ele abre a conversa com a mensagem pronta para a pessoa enviar.
+
+Testes: `bunx vitest run`.

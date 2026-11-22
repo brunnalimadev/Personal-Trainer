@@ -10,33 +10,74 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AulaExperimentalRouteImport } from './routes/aula-experimental'
+import { Route as GaleriaRouteImport } from './routes/galeria'
+import { Route as PacotesRouteImport } from './routes/pacotes'
+import { Route as SobreRouteImport } from './routes/sobre'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AulaExperimentalRoute = AulaExperimentalRouteImport.update({
+  id: '/aula-experimental',
+  path: '/aula-experimental',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GaleriaRoute = GaleriaRouteImport.update({
+  id: '/galeria',
+  path: '/galeria',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PacotesRoute = PacotesRouteImport.update({
+  id: '/pacotes',
+  path: '/pacotes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SobreRoute = SobreRouteImport.update({
+  id: '/sobre',
+  path: '/sobre',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/aula-experimental': typeof AulaExperimentalRoute
+  '/galeria': typeof GaleriaRoute
+  '/pacotes': typeof PacotesRoute
+  '/sobre': typeof SobreRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/aula-experimental': typeof AulaExperimentalRoute
+  '/galeria': typeof GaleriaRoute
+  '/pacotes': typeof PacotesRoute
+  '/sobre': typeof SobreRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/aula-experimental': typeof AulaExperimentalRoute
+  '/galeria': typeof GaleriaRoute
+  '/pacotes': typeof PacotesRoute
+  '/sobre': typeof SobreRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/aula-experimental' | '/galeria' | '/pacotes' | '/sobre'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/aula-experimental' | '/galeria' | '/pacotes' | '/sobre'
+  id:
+    '__root__' | '/' | '/aula-experimental' | '/galeria' | '/pacotes' | '/sobre'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AulaExperimentalRoute: typeof AulaExperimentalRoute
+  GaleriaRoute: typeof GaleriaRoute
+  PacotesRoute: typeof PacotesRoute
+  SobreRoute: typeof SobreRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +89,43 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/aula-experimental': {
+      id: '/aula-experimental'
+      path: '/aula-experimental'
+      fullPath: '/aula-experimental'
+      preLoaderRoute: typeof AulaExperimentalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/galeria': {
+      id: '/galeria'
+      path: '/galeria'
+      fullPath: '/galeria'
+      preLoaderRoute: typeof GaleriaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pacotes': {
+      id: '/pacotes'
+      path: '/pacotes'
+      fullPath: '/pacotes'
+      preLoaderRoute: typeof PacotesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sobre': {
+      id: '/sobre'
+      path: '/sobre'
+      fullPath: '/sobre'
+      preLoaderRoute: typeof SobreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AulaExperimentalRoute: AulaExperimentalRoute,
+  GaleriaRoute: GaleriaRoute,
+  PacotesRoute: PacotesRoute,
+  SobreRoute: SobreRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

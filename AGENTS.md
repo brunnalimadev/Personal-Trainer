@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- All editable site content (contact, prices, photos, copy lists) lives in `src/config/site.ts`; pages read from it so the owner edits one file.
+- Trial-request message/WhatsApp logic lives in `src/lib/trial-request.ts` (pure, unit-tested); no backend, nothing is sent automatically.
