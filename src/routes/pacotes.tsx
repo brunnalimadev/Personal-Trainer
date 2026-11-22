@@ -6,9 +6,9 @@ import { PageTitle } from "@/components/site-shell";
 export const Route = createFileRoute("/pacotes")({
   head: () => ({
     meta: [
-      { title: "Pacotes — Bruna de Lima, Personal Trainer" },
+      { title: "Pacotes — Personal Trainer" },
       { name: "description", content: "Pacotes de treino personalizado: avulsa e planos mensais." },
-      { property: "og:title", content: "Pacotes de treino — Bruna de Lima" },
+      { property: "og:title", content: "Pacotes de treino — Personal Trainer" },
       { property: "og:description", content: "Conheça os pacotes de treino personalizado." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },

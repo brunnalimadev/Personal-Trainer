@@ -4,10 +4,10 @@ import { site, fotos } from "@/config/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Bruna de Lima — Personal Trainer" },
-      { name: "description", content: "Treino personalizado, técnico e consistente com Bruna de Lima, formada em Educação Física." },
-      { property: "og:title", content: "Bruna de Lima — Personal Trainer" },
-      { property: "og:description", content: "Treino personalizado com Bruna de Lima. Solicite uma aula experimental." },
+      { title: "Personal Trainer" },
+      { name: "description", content: "Treino personalizado com orientação de uma profissional formada em Educação Física." },
+      { property: "og:title", content: "Personal Trainer" },
+      { property: "og:description", content: "Treino personalizado com orientação profissional. Solicite uma aula experimental." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -24,7 +24,7 @@ function Index() {
         <div className="mx-auto w-full max-w-6xl px-5 pb-16">
           <p className="text-sm font-bold uppercase tracking-[0.3em] text-primary">{site.titulo}</p>
           <h1 className="mt-3 font-display text-6xl uppercase leading-none md:text-9xl">Força<br />com método.</h1>
-          <p className="mt-6 max-w-xl text-lg text-foreground/90">Treino personalizado com {site.nome}, formada em Educação Física (bacharelado e licenciatura).</p>
+          <p className="mt-6 max-w-xl text-lg text-foreground/90">Treino personalizado com uma personal trainer formada em Educação Física (bacharelado e licenciatura).</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link to="/aula-experimental" className="bg-primary px-6 py-3 font-bold uppercase tracking-widest text-primary-foreground hover:opacity-90">Solicitar aula experimental</Link>
             <Link to="/pacotes" className="border border-foreground px-6 py-3 font-bold uppercase tracking-widest hover:bg-foreground hover:text-background">Ver pacotes</Link>

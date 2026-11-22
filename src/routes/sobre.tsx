@@ -5,9 +5,9 @@ import { PageTitle } from "@/components/site-shell";
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "Sobre — Bruna de Lima, Personal Trainer" },
-      { name: "description", content: "Conheça Bruna de Lima, bacharel e licenciada em Educação Física." },
-      { property: "og:title", content: "Sobre Bruna de Lima" },
+      { title: "Sobre — Personal Trainer" },
+      { name: "description", content: "Conheça a personal trainer, bacharel e licenciada em Educação Física." },
+      { property: "og:title", content: "Sobre a personal trainer" },
       { property: "og:description", content: "Formação em Educação Física: bacharelado e licenciatura." },
       { property: "og:type", content: "profile" },
       { name: "twitter:card", content: "summary" },

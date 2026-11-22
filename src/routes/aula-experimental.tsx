@@ -8,9 +8,9 @@ import { PageTitle } from "@/components/site-shell";
 export const Route = createFileRoute("/aula-experimental")({
   head: () => ({
     meta: [
-      { title: "Aula experimental — Bruna de Lima" },
-      { name: "description", content: "Solicite uma aula experimental com Bruna de Lima, personal trainer." },
-      { property: "og:title", content: "Aula experimental — Bruna de Lima" },
+      { title: "Aula experimental — Personal Trainer" },
+      { name: "description", content: "Solicite uma aula experimental de personal training." },
+      { property: "og:title", content: "Aula experimental — Personal Trainer" },
       { property: "og:description", content: "Envie seu pedido de aula experimental." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -62,7 +62,7 @@ function AulaExperimental() {
     if (!mensagem) return;
     try {
       await navigator.clipboard.writeText(mensagem);
-      setStatus("Pedido copiado. Cole e envie para a Bruna pelo canal de sua preferência.");
+      setStatus("Pedido copiado. Cole e envie para a personal trainer pelo canal de sua preferência.");
     } catch {
       setStatus("Não foi possível copiar automaticamente. Selecione o texto abaixo e copie.");
     }
@@ -75,7 +75,7 @@ function AulaExperimental() {
     <section className="mx-auto max-w-3xl px-5 py-20">
       <PageTitle kicker="Primeiro passo" title="Aula experimental" />
       <p className="mb-8 text-muted-foreground">
-        Preencha seu pedido. {temWhats ? "Ele será aberto no WhatsApp para você enviar." : "Como o contato ainda não foi configurado, você poderá copiar o pedido."} Este formulário não confirma reserva: a Bruna responderá sobre disponibilidade.
+        Preencha seu pedido. {temWhats ? "Ele será aberto no WhatsApp para você enviar." : "Como o contato ainda não foi configurado, você poderá copiar o pedido."} Este formulário não confirma reserva: a personal trainer responderá sobre disponibilidade.
       </p>
       <form noValidate onSubmit={onSubmit} className="space-y-6">
         <div>

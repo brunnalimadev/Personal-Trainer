@@ -5,7 +5,7 @@ import kettlebell from "@/assets/treino-kettlebell.jpg";
 import cordas from "@/assets/treino-cordas.jpg";
 
 export const site = {
-  nome: "Bruna de Lima",
+  nome: "Personal Trainer",
   titulo: "Personal Trainer",
   formacao: ["Bacharelado em Educação Física", "Licenciatura em Educação Física"],
   /** WhatsApp só com dígitos, com DDI e DDD (ex.: "5511999999999"). Vazio = sem contato configurado. */
@@ -13,7 +13,7 @@ export const site = {
   cidade: "",
 };
 
-/** Fotos ilustrativas de banco/IA. Não retratam a Bruna. Substitua por fotos reais em src/assets. */
+/** Fotos ilustrativas de banco/IA.  Substitua por fotos reais em src/assets. */
 export const fotos = {
   hero: { src: hero, alt: "Mulher realizando agachamento com barra em academia escura (imagem ilustrativa)", w: 1600, h: 1008 },
   galeria: [

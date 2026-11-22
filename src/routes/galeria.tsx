@@ -5,9 +5,9 @@ import { PageTitle } from "@/components/site-shell";
 export const Route = createFileRoute("/galeria")({
   head: () => ({
     meta: [
-      { title: "Galeria de treino — Bruna de Lima" },
+      { title: "Galeria de treino — Personal Trainer" },
       { name: "description", content: "Imagens ilustrativas de modalidades de treino." },
-      { property: "og:title", content: "Galeria de treino — Bruna de Lima" },
+      { property: "og:title", content: "Galeria de treino — Personal Trainer" },
       { property: "og:description", content: "Imagens ilustrativas de modalidades de treino." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
@@ -20,7 +20,7 @@ function Galeria() {
   return (
     <section className="mx-auto max-w-6xl px-5 py-20">
       <PageTitle kicker="Galeria" title="Treino em foco" />
-      <p className="mb-8 max-w-2xl text-muted-foreground">Fotos ilustrativas, que não retratam a Bruna nem alunos reais. Serão substituídas por fotos próprias.</p>
+      <p className="mb-8 max-w-2xl text-muted-foreground">Imagens ilustrativas de treino. Serão substituídas por fotos próprias.</p>
       <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {fotos.galeria.map((f) => (
           <li key={f.legenda}>

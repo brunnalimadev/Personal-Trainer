@@ -35,7 +35,7 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-border py-10 text-sm text-muted-foreground">
       <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 md:flex-row md:justify-between">
-        <p>© {new Date().getFullYear()} {site.nome} — {site.titulo}</p>
+        <p>© {new Date().getFullYear()} {site.nome}</p>
         <p>Fotos ilustrativas; não retratam a profissional.</p>
       </div>
     </footer>
