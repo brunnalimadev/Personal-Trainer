@@ -1,37 +1,25 @@
-# Personal Trainer
+# Personal Trainer 💪
 
-oi
+## Sobre o projeto
 
-This project was built with [Lovable](https://lovable.dev).
+Aplicativo web voltado para a apresentação de serviços de Personal Trainer, desenvolvido com o auxílio do Lovable.
 
-## Build with Lovable
+O projeto apresenta uma interface moderna e responsiva, com identidade visual em azul e preto, oferecendo informações sobre treinamento personalizado.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/55c7ad11-a3ac-42d9-96ae-3f49f40f8eee).
+## Tecnologias
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+- TypeScript
+- Lovable
+- Git e GitHub para versionamento
 
-## Development
+## Acessar o projeto
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+🌐 **Site publicado:** https://bruna-blue-motion.lovable.app
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+## Objetivo
 
-## Configuração do site
+Aplicar conhecimentos de desenvolvimento web e ampliar meu portfólio de projetos durante minha formação em Análise e Desenvolvimento de Sistemas.
 
-Todos os dados editáveis ficam em `src/config/site.ts`:
+## Desenvolvimento
 
-- **`site.whatsapp`** — número só com dígitos, com DDI e DDD (ex.: `5511999999999`). Vazio: o formulário apenas monta o pedido e oferece "Copiar pedido"; nada é enviado.
-- **`pacotes[].preco`** — `null` exibe "Sob consulta". Ex.: `"R$ 300/mês"`.
-- **`site.formacao`**, **`objetivos`** — textos da apresentação e opções do formulário.
-- **Fotos** — as imagens em `src/assets/treino-*.jpg` são ilustrativas e não retratam a Bruna. Substitua os arquivos (mesmo nome) ou altere `fotos` no config.
-
-O formulário de aula experimental nunca confirma reserva: com WhatsApp configurado ele abre a conversa com a mensagem pronta para a pessoa enviar.
-
-Testes: `bunx vitest run`.
+Projeto em evolução, com futuras melhorias planejadas para a experiência dos usuários.
