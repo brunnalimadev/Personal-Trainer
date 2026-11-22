@@ -1,5 +1,5 @@
 # Personal Trainer 💪
-
+![Tela inicial do Personal Trainer](personal-trainer.png)
 ## Sobre o projeto
 
 Aplicativo web voltado para a apresentação de serviços de Personal Trainer, desenvolvido com o auxílio do Lovable.
